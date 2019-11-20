@@ -6,6 +6,8 @@ module.exports = {
   SCAN_BUFFER_SIZE: process.env.SCAN_BUFFER_SIZE,
   MAX_AVG_NOISE: process.env.MAX_AVG_NOISE,
 
-  TOKEN: process.env.SLACK_BOT_TOKEN,
-  SLACK_CHANNEL: process.env.SLACK_CHANNEL,
+  SENDER_EMAIL: process.env.SENDER_EMAIL,
+  SENDER_PASSWORD: process.env.SENDER_PASSWORD,
+
+  CHAT_EMAILS: process.env.CHAT_EMAILS,
 }

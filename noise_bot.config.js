@@ -8,11 +8,14 @@ module.exports = {
         PID: 22352,
 
         SYNC_INTERVAL: 1000,
-        SCAN_BUFFER_SIZE: 3,
+        SCAN_BUFFER_SIZE: 5,
         MAX_AVG_NOISE: 60,
+        TIMEOUT: 10000,
 
-        SLACK_BOT_TOKEN: '',
-        SLACK_CHANNEL: 'noise_test',
+        SENDER_EMAIL: '',
+        SENDER_PASSWORD: '',
+
+        CHAT_EMAILS: '',
       },
     },
   ],

@@ -14,7 +14,7 @@
     "dotenv": "^8.2.0",
     "lodash": "^4.17.15",
     "node-hid": "^0.7.9",
-    "slack": "^11.0.2",
+    "nodemailer": "^6.3.1",
     "winston": "^3.2.1",
     "winston-daily-rotate-file": "^4.2.1"
   },
