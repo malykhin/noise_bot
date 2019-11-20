@@ -1,0 +1,27 @@
+{
+  "name": "noise_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "start:pm2": "pm2 start noise_bot.config.js",
+    "stop:pm2": "pm2 stop noise_bot.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15",
+    "node-hid": "^0.7.9",
+    "slack": "^11.0.2",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-jest": "^23.0.3",
+    "eslint-plugin-node": "^10.0.0",
+    "pm2": "^4.1.2"
+  }
+}
