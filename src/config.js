@@ -10,4 +10,7 @@ module.exports = {
   SENDER_PASSWORD: process.env.SENDER_PASSWORD,
 
   CHAT_EMAILS: process.env.CHAT_EMAILS,
+
+  GET_IP_COMMAND: process.env.GET_IP_COMMAND,
+  EXTERNAL_VALUE_STORAGE_URL: process.env.EXTERNAL_VALUE_STORAGE_URL,
 }

@@ -10,14 +10,20 @@ const transporter = nodemailer.createTransport({
   },
 })
 
-const mailOptions = {
+const defaultMailOptions = {
   from: SENDER_EMAIL,
   to: CHAT_EMAILS.split(','),
+  subject: '',
+  html: '',
+}
+
+const loudMailOptions = {
+  ...defaultMailOptions,
   subject: "It's so loud in here",
   html: '<b>Quiet please!</b>',
 }
 
-const sendMail = () =>
+const sendMail = (mailOptions) =>
   new Promise((resolve, reject) =>
     transporter.sendMail(mailOptions, (error, data) => {
       if (error) {
@@ -27,4 +33,8 @@ const sendMail = () =>
     }),
   )
 
-module.exports = sendMail
+const sendLoudMail = () => sendMail(loudMailOptions)
+
+const sendAddressEmail = (ip) => sendMail({ ...defaultMailOptions, subject: 'My IP address', html: `<b>${ip}</b>` })
+
+module.exports = { sendMail, sendLoudMail, sendAddressEmail }

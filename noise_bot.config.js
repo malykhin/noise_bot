@@ -16,6 +16,8 @@ module.exports = {
         SENDER_PASSWORD: '',
 
         CHAT_EMAILS: '',
+        GET_IP_COMMAND: 'hostname -I',
+        EXTERNAL_VALUE_STORAGE_URL: 'http://10.8.0.1',
       },
     },
   ],
