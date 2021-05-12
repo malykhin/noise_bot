@@ -14,7 +14,7 @@
     "dotenv": "^8.2.0",
     "lodash": "^4.17.19",
     "node-hid": "^0.7.9",
-    "nodemailer": "^6.3.1",
+    "nodemailer": "^6.4.16",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.8",
     "winston": "^3.2.1",
